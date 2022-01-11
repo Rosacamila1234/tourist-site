@@ -35,14 +35,17 @@
         text-align:center;
         background-image: linear-gradient(90deg, rgb(168, 205, 240), rgb(255, 103, 103));
         color:#555;
-        margin-bottom: 2px;
+        margin-bottom: 2sp;
       }
       
       /* Navigation bar styling */
       .navbar {
         border-radius: 0;
       }
-    
+
+      .description{
+        font-size: 1.3em;
+      }
       /* Footer styling */
       footer {
         background-color: #555;
@@ -89,8 +92,8 @@
 
     <!-- Landing -->
     <div class="container" id="welcome">
-      <h3>"A City Writ in Art"</h3>
-      <p>Nice is a city located along south coast of France on the French Riviera and has long been a destination for
+      <h2>"A City Writ in Art"</h2>
+      <p class="description">Nice is a city located along south coast of France on the French Riviera and has long been a destination for
         artists and tourists. Bordered by the Alps to the north and the Mediterranean sea to the south, it is a 
         beaufitul town with breathtaking views of the waterfront that have earned the coastline the name "Azure Coast". 
       </p>
@@ -122,47 +125,105 @@
 
     <!-- h5p components -->
     <div class="container" id="videotour">
-      <iframe src="https://h5p.org/h5p/embed/1240393" width="1080" height="720" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="A video tour of Nice"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+      <h3>A Video Tour of the City</h3>
+      <div class="row">
+        <div class="col-md-10">
+          <iframe src="https://h5p.org/h5p/embed/1240393" width="1080" height="720" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="A video tour of Nice"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+        </div>
+      </div>
+      
     </div>
     <div class="container" id="oldtown">
       <h2 class="title">Old Town</h2>
-      <p>The old town section of Nice is home to colorful houses and narrow streets that have for many years been an
-        inspiration for painters. It preserves the rich architectural heritage that the city is famed for and is
-        a sight to behold, attracting tourists from all over the world to experience its sights, sounds and the local
-        cuisines.
-      </p>
-      <iframe src="https://h5p.org/h5p/embed/1240197" width="1090" height="917" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Old Town, Nice"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+      <div class="row">
+        <div class="col-md-6 description" >
+          <p>
+            The very first construction of the current Old Town began all the way back in the 12<sup>th</sup> century, growing through the centuries
+            and undergoing changes in structure as well as politics, which saw the town annexed by France to become a territory of Italy, and only
+            returned to French administration in the mid 19<sup>th</sup> century, hence the heavy Italian influence on its architecture and art. The 
+            Old Town is home to rows upon rows of variably colorful storied buildings with narrow (some even cobbled) streets that have hundreds of 
+            shops, restaurants and galleries where tourists can view and buy pieces of art, appreciate the local cuisine and where locals generally
+            conduct trade.
+          </p>
+          <p>
+            The beautiful confecture of houses have also been the subject of many an artist's paintings which is one of the main attractions of the
+            so-called Vieux Nice. Presently, it is bordered by Castle Hill to the east, the famed Promenade des Anglais to the south and the Promenade du
+            Paillon, formerly the Paillon River, to the north. The modern city center borders it to the west.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <iframe src="https://h5p.org/h5p/embed/1240197" width="1090" height="917" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Old Town, Nice"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>    
+        </div>
+      </div>
     </div>
 
     <div class="container" id="waterfeatures">
       <h2 class="title">Water Attractions</h2>
-      <p>The city of Nice offers breathtaking views of the Azure Coast, with pebbly beaches where tourists flock to in
-        the summer. Further inland there are fountains including the iconic Miroir d'Eau which makes for spectacular viewing
-        especially in spring and in the summer.
-      </p>
-      <iframe src="https://h5p.org/h5p/embed/1240210" width="1090" height="921" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Waterfront"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+      <div class="row">
+        <div class="col-md-6">
+          <iframe src="https://h5p.org/h5p/embed/1240210" width="1090" height="921" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Waterfront"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+        </div>
+        <div class="col-md-6 description">
+          <p>The city of Nice offers breathtaking views of the Azure Coast, with pebbly beaches where tourists flock to in
+            the summer. The coastline offers breathtaking views of the Mediterranean Sea over the Bay of Angels, the Promenade de Anglais and 
+            the port. The Promenade de Anglais is widely considered the place to be in Nice, built on a 7 km stretch on the waterfront and hosting 
+            hotels along the beach. It contains a walkway that has become popular with bikers, roller skaters and runners, a fantastic place for 
+            exercise and relaxation on your tour of the city.
+          </p> 
+          <p>Further inland there are fountains including the iconic Miroir d'Eau which makes for spectacular viewing
+            especially in spring and in the summer. The so called Water Mirror was constructed over the River Paillon which was filled up and 
+            built over, the area later named the Promenade du Paillon. The springs at the Water Mirror emit water jets up to 5 meters in the air
+            and are a popular with the children, while reflecting the surrounding environs perfectly when the spring is perfectly still. In the 
+            mornings they emit a fine mist to imitate the river mist that would have been seen when it flowed through the city.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="container" id="museums">
       <h2 class="title">Museums</h2>
-      <p>The city of Nice is steeped in centuries of art and culture, from Italian works in the 18th century to modern
+      <p class="description">The city of Nice is steeped in centuries of art and culture, from Italian works in the 18<sup>th</sup> century to modern
         and contemporary art of the age, and everything in between. It boasts the most museums in a single city in France,
         which have and continue to preserve said art. The most famous art museums are the Musée Masséna and the Musée Jules 
-        Chéret des Beaux-Arts
+        Chéret des Beaux-Arts. The city is packed with history ranging from the ruins of the Roman Empire to widely acclaimed works from French
+        master artists such as Henri Matisse, as well as insights into the French nobility who lived in the area in the 19<sup>th</sup> century.
+        Whether you are an art enthusiast or a history major, a fan of the 60's pop culture or you just appreciate culture and architecture, 
+        there is something for everyone in this beautiful coastal city.
       </p>
       <iframe src="https://h5p.org/h5p/embed/1240226" width="1090" height="515" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Museums in France"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
     </div>
 
     <div class=container id="factcheck">
       <h2 class="title">Fact Check</h2>
-      <iframe src="https://h5p.org/h5p/embed/1239919" width="1090" height="893" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Memory Facts About Nice"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
-    <p></p>
-      <p>The city is linked to the rest of France by the French national motorway network and its airport is the second-largest in 
-        the country, and it is also connected to the capital, Paris, by high-speed train. This accessibility makes it all the more 
-        desirable to tourists, and thus the city is a major economic influence in the region
-      </p>
+      <div class="row">
+        <div class="col-md-6">
+          <iframe src="https://h5p.org/h5p/embed/1239919" width="1090" height="893" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Memory Facts About Nice"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+        </div>
+        <div class="col-md-6 description">
+          <p>The city is linked to the rest of France by the French national motorway network and its airport is the second-largest in the country, 
+            and it is also connected to the capital, Paris, by high-speed train. This accessibility makes it all the more desirable to tourists, 
+            and thus the city is a major economic influence in the region. The city itself is sufficiently accessible via road, bike lanes and city 
+            tramways.
+          </p>
+          <p>
+            As mentioned, the city is home to the second-largest airport in the country, therefore foreign tourists need not go through the capital
+            to access it. Located approximately 7 km from the city center, the Nice Côte d'Azur Airport serves more than just the city of Nice; its 
+            proximity to the city of Monaco makes it a critical terminal in the region, and can handle up to 14 million passengers a year, with the 
+            exception of the impact of the recent COVID-19 pandemic in recent times having seen its usage drop dramatically. Numbers have fluctuated
+            as the situation worldwide continues to be monitored.
+          </p>
+          <p>
+            The city owes its Italian art influence to its proximity to the French-Italian border. Tourists looking for a trip out of town can 
+            consequently reach Italy or Monaco to either side by helicopter or road, with the Italy border only 20 km away. It makes for as beautiful
+            a hub as one can hope for in the south of France, the Riviera offering miles of beautiful views along the seafront with majestic views
+            of the Alps in the distance. The city of Nice is therefore a popular tourist destination, summer offering the prospect of pebbled beaches
+            and winter offering skiing opportunities up in the mountains.
+          </p>
+        </div>
+      </div>
+      
     </div>
-    <br>
+    </br>
     <!-- BIBLIOGRAPHY -->
     <div class="container" id="links">
       <h3>Attributions</h3>
@@ -200,7 +261,6 @@
       </ol>
     </div>
     <br>
-
     <!-- FOOTER -->
 
     <footer>
