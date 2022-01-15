@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A Tourist's Guide of Nice, France</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta charset="UTF-8">
+    
+    <!-- STYLE RULES -->
+    <style>
+      
+    </style>
+  </head>
+  <body>
+
+    <!-- BANNER -->
+    <div class="jumbotron">
+      <h1>The City Of Nice, France</h1>
+      <p>A Brief Tourist Guide</p>
+    </div>
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      
+          <a class="navbar-brand" href="index.html">Tour de Nice</a>
+        </div>
+    
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="oldtown.html">Old Town</a></li>
+            <li><a href="waterfeatures.html">Water Features</a></li>
+            <li class="active"><a href="#museums">Museums</a></li>
+            <li><a href="factcheck.html">Fact Check</a></li>      
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+
+    <!-- h5p components -->
+    <div class="container" id="museums">
+      <h2 class="title">Museums</h2>
+      <p class="description">The city of Nice is steeped in centuries of art and culture, from Italian works in the 18<sup>th</sup> century to modern
+        and contemporary art of the age, and everything in between. It boasts the most museums in a single city in France,
+        which have and continue to preserve said art. The most famous art museums are the Musée Masséna and the Musée Jules 
+        Chéret des Beaux-Arts. The city is packed with history ranging from the ruins of the Roman Empire to widely acclaimed works from French
+        master artists such as Henri Matisse, as well as insights into the French nobility who lived in the area in the 19<sup>th</sup> century.
+        Whether you are an art enthusiast or a history major, a fan of the 60's pop culture or you just appreciate culture and architecture, 
+        there is something for everyone in this beautiful coastal city.
+      </p>
+      <iframe src="https://h5p.org/h5p/embed/1240226" width="1090" height="515" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Museums in France"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+    </div>
+
+    </br>
+    <!-- BIBLIOGRAPHY -->
+    <div class="container" id="links">
+      <h3>Attributions</h3>
+      <ol>
+        
+        <li>André ALLIOT - File:Intérieur du parc phoenix de Nice.jpg, CC0,</li>
+        <a href="https://commons.wikimedia.org/w/index.php?curid=89574494">Parc Phoenix Asian Art Museum</a>
+        <li>Miniwark - Own work, CC BY-SA 3.0, </li>
+        <a href="https://commons.wikimedia.org/w/index.php?curid=16567715">Musée Jules Cherét des Beaux-Arts</a>
+        <li>frenchriviera.travel</li>
+        <a href="https://frenchriviera.travel/museum-modern-contemporary-art/">Museum of Modern and Contemporary Art</a>
+        
+      </ol>
+    </div>
+    <br>
+    <!-- FOOTER -->
+
+    <footer>
+      <p> &copy; Rosa Camila, 2022 </p>
+      <p>190300991</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      $(document).ready(function(){
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+              
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+  
+        $(window).scroll(function() {
+          $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+      
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide");
+            }
+          });
+        });
+      })
+      </script>
+  </body>
+</html>
