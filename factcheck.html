@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A Tourist's Guide of Nice, France</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta charset="UTF-8">
+    
+    <!-- STYLE RULES -->
+    <style>
+      
+    </style>
+  </head>
+  <body>
+
+    <!-- BANNER -->
+    <div class="jumbotron">
+      <h1>The City Of Nice, France</h1>
+      <p>A Brief Tourist Guide</p>
+    </div>
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      
+          <a class="navbar-brand" href="index.html">Tour de Nice</a>
+        </div>
+    
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="oldtown.html">Old Town</a></li>
+            <li><a href="waterfeatures.html">Water Features</a></li>
+            <li><a href="museums.html">Museums</a></li>
+            <li class="active"><a href="#factcheck">Fact Check</a></li>      
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+
+    <!-- h5p components -->
+    <div class=container id="factcheck">
+      <h2 class="title">Fact Check</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <iframe src="https://h5p.org/h5p/embed/1239919" width="1090" height="893" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Memory Facts About Nice"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+        </div>
+        <div class="col-md-6 description">
+          <p>The city is linked to the rest of France by the French national motorway network and its airport is the second-largest in the country, 
+            and it is also connected to the capital, Paris, by high-speed train. This accessibility makes it all the more desirable to tourists, 
+            and thus the city is a major economic influence in the region. The city itself is sufficiently accessible via road, bike lanes and city 
+            tramways.
+          </p>
+          <p>
+            As mentioned, the city is home to the second-largest airport in the country, therefore foreign tourists need not go through the capital
+            to access it. Located approximately 7 km from the city center, the Nice Côte d'Azur Airport serves more than just the city of Nice; its 
+            proximity to the city of Monaco makes it a critical terminal in the region, and can handle up to 14 million passengers a year, with the 
+            exception of the impact of the recent COVID-19 pandemic in recent times having seen its usage drop dramatically. Numbers have fluctuated
+            as the situation worldwide continues to be monitored.
+          </p>
+          <p>
+            The city owes its Italian art influence to its proximity to the French-Italian border. Tourists looking for a trip out of town can 
+            consequently reach Italy or Monaco to either side by helicopter or road, with the Italy border only 20 km away. It makes for as beautiful
+            a hub as one can hope for in the south of France, the Riviera offering miles of beautiful views along the seafront with majestic views
+            of the Alps in the distance. The city of Nice is therefore a popular tourist destination, summer offering the prospect of pebbled beaches
+            and winter offering skiing opportunities up in the mountains.
+          </p>
+        </div>
+      </div>
+    </div>
+    </br>
+    <!-- BIBLIOGRAPHY -->
+    <div class="container" id="links">
+      <h3>Attributions</h3>
+      <ol>
+
+        <li>wikidata.org</li>
+        <a href="https://www.wikidata.org/wiki/Q33959">Port Of Nice, Côte d'Azur</a>
+        <li>Roland45 - Own work avec les données</li>
+        <a href="https://commons.wikimedia.org/w/index.php?curid=97046130">A Map of Nice</a>
+        <li>OpenStreetMap project</li>
+        <a href="https://commons.wikimedia.org/w/index.php?curid=100309742">A Transport Network Map of Nice</a>
+
+      </ol>
+    </div>
+    <br>
+    <!-- FOOTER -->
+
+    <footer>
+      <p> &copy; Rosa Camila, 2022 </p>
+      <p>190300991</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      $(document).ready(function(){
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+              
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+  
+        $(window).scroll(function() {
+          $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+      
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide");
+            }
+          });
+        });
+      })
+      </script>
+  </body>
+</html>
