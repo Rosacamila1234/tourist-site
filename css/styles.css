@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-image: linear-gradient(120deg, lavender, peachpuff);
+      }
+    
+      /* Banner style */
+      .jumbotron {
+        padding-top: 48px;
+        padding-bottom: 24px;
+        text-align: center;
+        background: #155799;
+        color: antiquewhite;
+        margin-bottom: 0px;
+      }
+    
+      /* Title styling */
+      .title {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        text-align:center;
+        background-image: linear-gradient(90deg, rgb(168, 205, 240), rgb(255, 103, 103));
+        color:#555;
+        margin-bottom: 2sp;
+      }
+      
+      /* Navigation bar styling */
+      .navbar {
+        border-radius: 0;
+      }
+
+      .description{
+        font-size: 1.3em;
+      }
+      /* Footer styling */
+      footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+        text-align:center; 
+      }
